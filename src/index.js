@@ -1,13 +1,12 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+var React = require("react");
+var ReactDOM = require("react-dom");
 
-import App from "./App";
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+ReactDOM.render(
+  <div>
+    <h1> Hello World </h1>
+    <p>
+      React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+    </p>
+  </div>,
+  document.getElementById("root")
+)
